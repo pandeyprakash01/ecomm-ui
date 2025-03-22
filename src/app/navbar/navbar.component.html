@@ -1,0 +1,28 @@
+
+<nav>
+    <form (submit)="handleSearch()">
+        <input type="text" placeholder="Search product ..." name="searchValue" [(ngModel)]="searchValue">
+        <button type="submit">search</button>
+    
+    </form>
+
+    
+    <div>
+        <a href="#">home</a>
+        <a href="#">login</a>
+        <a href="#">cart</a>
+    </div>
+</nav>
+
+    <div>
+        <ul>
+        <li *ngFor="let product of productList">
+          <img [src]="product.imageUrl" alt="{{ product.name }}" style="max-width: 100px;">
+          <h3>{{ product.name }}</h3>
+          <p>{{ product.description }}</p>
+          <p>Price: ₹{{ product.price }}</p>
+        </li>
+        </ul>
+      <div>
+
+

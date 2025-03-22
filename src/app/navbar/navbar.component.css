@@ -1,0 +1,18 @@
+nav{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+input{
+    padding: 15px;
+    width: 500px;
+    border-radius: 3px;
+}
+button{
+    padding: 15px;
+    border: none;
+    margin-left: 2px;
+    
+}
