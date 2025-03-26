@@ -2,9 +2,6 @@ import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { provideHttpClient } from '@angular/common/http';
 import { routes } from './app.routes';
-import { Amplify } from 'aws-amplify';
-import { AmplifyAuthenticatorModule,AuthenticatorService  } from '@aws-amplify/ui-angular';
-// import awsconfig from '../aws-exports';
 
 
 // import awsExports from '../aws-exports';
