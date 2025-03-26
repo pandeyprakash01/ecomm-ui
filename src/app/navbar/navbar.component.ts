@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit{
   
   
   constructor(private route: ActivatedRoute,private apiService:ApiService){
-    this.cognitoLoginUrl = "https://ap-south-1dayobtsyg.auth.ap-south-1.amazoncognito.com/login?client_id=48cks2tbnq57a25e7buiirkge4&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fcallback&response_type=code&scope=email+openid+phone";
+    this.cognitoLoginUrl = "https://ap-south-14laopcgtk.auth.ap-south-1.amazoncognito.com/login?client_id=2onbl9d9ekqmspnhhp47asejmq&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fd84l1y8p4kdic.cloudfront.net";
   }
 
    ngOnInit() {
