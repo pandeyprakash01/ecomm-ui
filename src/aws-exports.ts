@@ -18,12 +18,12 @@
 //   }
 // };
 
-const awsmobile = {
-  Auth: {
-      region: 'ap-south-1',
-      userPoolId: 'ap-south-1_lFhzwa8Ty',
-      userPoolWebClientId: '3n4forqpegmtnhijsf3f705ujs',
-  }
-};
+// const awsmobile = {
+//   Auth: {
+//       region: 'ap-south-1',
+//       userPoolId: 'ap-south-1_lFhzwa8Ty',
+//       userPoolWebClientId: '3n4forqpegmtnhijsf3f705ujs',
+//   }
+// };
 
-export default awsmobile;
+// export default awsmobile;
