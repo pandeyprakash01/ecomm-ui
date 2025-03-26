@@ -1,2 +1,11 @@
 <p>login works!</p>
-https://ap-south-1yb2tire9f.auth.ap-south-1.amazoncognito.com/login?client_id=4b6nuc2nr9oj7p9gm9fbmd0qv2&redirect_uri=https://d84l1y8p4kdic.cloudfront.net&response_type=code&scope=email+openid+phone
+<amplify-authenticator [loginMechanisms]="['email']">
+    <ng-template
+    amplifySlot="authenticated"
+    let-user="user"
+    let-signOut="signOut"
+  >
+    <h2>Welcome, {{ user.username }}!</h2>
+    <button (click)="signOut()">Sign Out</button>
+  </ng-template>
+</amplify-authenticator>

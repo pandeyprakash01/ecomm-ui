@@ -1,20 +1,20 @@
 
 <nav>
-    <form (submit)="handleSearch()">
-        <input type="text" placeholder="Search product ..." name="searchValue" [(ngModel)]="searchValue">
-        <button type="submit">search</button>
-    
-    </form>
+   
 
     
     <div>
-        <a href="#">home1</a>
-        <a href="#">login</a>
-        <a href="#">cart</a>
+        <a [href]="cognitoLoginUrl">Login</a>
+        <a *ngIf="isAuthenticated" (click)="handleLogout()">Logout</a>
+        <!-- <button (click)="handleLogin()">login</button> -->
+        <!-- <a href="#">home1</a> -->
+        <!-- <a routerLink="/login">login</a> -->
+        <!-- <a href="#">cart</a> -->
+        <!-- <a href="https://ap-south-1u0wjpjmql.auth.ap-south-1.amazoncognito.com/login?client_id=6ir8sofv4ntb74g46daa6g0h54&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F">login</a> -->
     </div>
 </nav>
 
-    <div>
+    <!-- <div>
         <ul>
         <li *ngFor="let product of productList">
           <img [src]="product.imageUrl" alt="{{ product.name }}" style="max-width: 100px;">
@@ -23,6 +23,6 @@
           <p>Price: ₹{{ product.price }}</p>
         </li>
         </ul>
-      <div>
+      <div> -->
 
 
