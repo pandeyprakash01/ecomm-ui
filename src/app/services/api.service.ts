@@ -21,7 +21,7 @@ export class ApiService {
     // return this.http.get<Product[]>(ApiService.BASE_URL, { params });
   }
   public welcomeMessage(searchValue: string){
-    console.log("now calling welcome mesage from angular");
+    console.log("now calling welcome mesage from angular again");
     return this.http.get(`${ApiService.BASE_URL_WELCOME}/ecomm`,{responseType: 'text'});
     }
 
