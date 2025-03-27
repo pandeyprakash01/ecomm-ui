@@ -8,7 +8,7 @@ import { Product } from '../model/product';
 export class ApiService {
 
   // private static BASE_URL_WELCOME = 'http://localhost:8080';
-  private static BASE_URL_WELCOME = 'arn:aws:execute-api:ap-south-1:051826725545:vyi2nwp9j9/*/*/eccom';
+  private static BASE_URL_WELCOME = 'https://vyi2nwp9j9.execute-api.ap-south-1.amazonaws.com/prod';
 
   constructor(private http:HttpClient) { }
 
@@ -22,7 +22,7 @@ export class ApiService {
   }
   public welcomeMessage(searchValue: string){
     console.log("now calling welcome mesage from angular");
-    return this.http.get(`${ApiService.BASE_URL_WELCOME}/welcome`,{responseType: 'text'});
+    return this.http.get(`${ApiService.BASE_URL_WELCOME}/ecomm`,{responseType: 'text'});
     }
 
 }
