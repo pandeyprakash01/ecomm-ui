@@ -19,7 +19,7 @@ export class SearchComponent {
   handleSearch(){
     
     console.log("search value is :"+this.searchValue);
-    console.log("sprin boot search value is :"+this.apiService.searchProducts(this.searchValue ))
+    // console.log("sprin boot search value is :"+this.apiService.searchProducts(this.searchValue ))
     
     this.apiService.welcomeMessage(this.searchValue).subscribe(
       (message) => {
