@@ -21,29 +21,29 @@ export class SearchComponent {
     console.log("search value is :"+this.searchValue);
     // console.log("sprin boot search value is :"+this.apiService.searchProducts(this.searchValue ))
     
-    this.apiService.welcomeMessage(this.searchValue).subscribe(
-      (message) => {
-        console.log('Welcome Message:', message);
-      },
-      (error) => {
-        console.error('Error fetching welcome message:', error);
-      }
-    );
+    // this.apiService.welcomeMessage(this.searchValue).subscribe(
+    //   (message) => {
+    //     console.log('Welcome Message:', message);
+    //   },
+    //   (error) => {
+    //     console.error('Error fetching welcome message:', error);
+    //   }
+    // );
     
 
-    // if (this.searchValue.trim() !== '') {
-    //   this.apiService.searchProducts(this.searchValue).subscribe(
-    //     (response) => {
-    //       console.log('JSON Response:', response); // Print the response to the console
-    //       this.productList = response; //store the response
-    //     },
-    //     (error) => {
-    //       console.error('Error fetching search results:', error);
-    //     }
-    //   );
-    // } else {
-    //   this.productList = [];
-    // }
+    if (this.searchValue.trim() !== '') {
+      this.apiService.searchProducts(this.searchValue).subscribe(
+        (response) => {
+          console.log('JSON Response:', response); // Print the response to the console
+          this.productList = response; //store the response
+        },
+        (error) => {
+          console.error('Error fetching search results:', error);
+        }
+      );
+    } else {
+      this.productList = [];
+    }
 
     
 
