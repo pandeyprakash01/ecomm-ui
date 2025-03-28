@@ -8,7 +8,7 @@ import { Product } from '../model/product';
 export class ApiService {
 
   // private static BASE_URL_WELCOME = 'http://localhost:8080';
-  private static BASE_URL_WELCOME = 'https://4j0ybar4z1.execute-api.ap-south-1.amazonaws.com/prod';
+  private static BASE_URL_WELCOME = 'https://ap-south-1bh4ildnon.auth.ap-south-1.amazoncognito.com/login?client_id=5ojrek5i6r6cali33so6iu2lgt&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fd24sr4nz8uhuqy.cloudfront.net%2Fcallback';
 
   constructor(private http:HttpClient) { }
 
