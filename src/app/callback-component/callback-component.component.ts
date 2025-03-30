@@ -20,7 +20,7 @@ export class CallbackComponentComponent implements OnInit{
       try {
         // await Auth.federatedSignIn({ customState: code });
         localStorage.setItem('token',code)
-        this.router.navigate(['/search']);
+        this.router.navigate(['']);
         console.log("code in call back is code"+code)
         console.log("localStorage"+localStorage)
       } catch (error) {

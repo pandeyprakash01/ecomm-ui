@@ -8,7 +8,7 @@ import { Product } from '../model/product';
 export class ApiService {
 
   // private static BASE_URL_WELCOME = 'http://localhost:8080';
-  private static BASE_URL_WELCOME  = 'https://4j0ybar4z1.execute-api.ap-south-1.amazonaws.com/prod';
+  private static BASE_URL_WELCOME  = 'https://5i3qj3qwgl.execute-api.ap-south-1.amazonaws.com/prod';
 
   constructor(private http:HttpClient) { }
 

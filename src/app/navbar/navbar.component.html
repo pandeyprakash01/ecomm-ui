@@ -1,17 +1,25 @@
 
 <nav>
-   
+  <form *ngIf="isLoggedIn" (submit)="handleSearch()">
+    <input type="text" placeholder="Search product ..." name="searchValue" [(ngModel)]="searchValue">
+    <button type="submit">Search</button>
+</form>
 
-    
-    <div>
+  <div>
+    <a routerLink="/" routerLinkActive="active">Home</a> 
+    <a *ngIf="!isLoggedIn" [href]="cognitoLoginUrl" routerLinkActive="active">Login</a>
+    <a *ngIf="isLoggedIn" (click)="logout()">Logout</a>
+    <!-- <a *ngIf="isLoggedIn" routerLink="/search" routerLinkActive="active">Search</a> -->
+    </div>    
+    <!-- <div>
         <a [href]="cognitoLoginUrl">Login1</a>
-        <!-- <a (click)="handleLogout()">Logout</a> -->
+         <a (click)="handleLogout()">Logout</a> -->
         <!-- <button (click)="handleLogin()">login</button> -->
         <!-- <a href="#">home1</a> -->
         <!-- <a routerLink="/login">login</a> -->
         <!-- <a href="#">cart</a> -->
         <!-- <a href="https://ap-south-1u0wjpjmql.auth.ap-south-1.amazoncognito.com/login?client_id=6ir8sofv4ntb74g46daa6g0h54&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F">login</a> -->
-    </div>
+    <!--</div> -->
 </nav>
 now try with opensearh
     <!-- <div>
