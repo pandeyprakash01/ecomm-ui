@@ -41,61 +41,12 @@ export class NavbarComponent implements OnInit{
     localStorage.removeItem('token');
     console.log('Token removed from localStorage');
     this.isLoggedIn = false; // Update the login status
-    this.router.navigate(['/login']);
+    this.productList = []
+    this.router.navigate(['']);
     console.log('Navigated to /login');
   }
 
-  // handleLogin(){
-  //   // alert("button clicked");
-  //   const loginUrl="https://ap-south-1dayobtsyg.auth.ap-south-1.amazoncognito.com/login?client_id=48cks2tbnq57a25e7buiirkge4&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fcallback&response_type=code&scope=email+openid+phone";
-  //   window.location.href = loginUrl;
-  // }
-  // handleSearch(){
-  //   console.log("search value is :"+this.searchValue);
-  //   console.log("sprin boot search value is :"+this.apiService.searchProducts(this.searchValue ))
-    
-  //   this.apiService.searchProducts(this.searchValue).subscribe(
-  //     (message) => {
-  //       console.log('Welcome Message:', message);
-  //     },
-  //     (error) => {
-  //       console.error('Error fetching welcome message:', error);
-  //     }
-  //   );
-    
-
-  //   // if (this.searchValue.trim() !== '') {
-  //   //   this.apiService.searchProducts(this.searchValue).subscribe(
-  //   //     (response) => {
-  //   //       console.log('JSON Response:', response); // Print the response to the console
-  //   //       this.productList = response; //store the response
-  //   //     },
-  //   //     (error) => {
-  //   //       console.error('Error fetching search results:', error);
-  //   //     }
-  //   //   );
-  //   // } else {
-  //   //   this.productList = [];
-  //   // }
-
-    
-
-  //   // if (this.searchValue.trim() !== '') {
-  //   //   this.apiService.searchProducts(this.searchValue).subscribe(
-  //   //     (response) => {
-  //   //       console.log('JSON Response:', response); // Print the response to the console
-  //   //       this.searchResults = response; //store the response
-  //   //     },
-  //   //     (error) => {
-  //   //       console.error('Error fetching search results:', error);
-  //   //     }
-  //   //   );
-  //   // } else {
-  //   //   this.searchResults = [];
-  //   // }
-    
-
-  // }
+  
 
   handleSearch(){
     
@@ -126,22 +77,6 @@ export class NavbarComponent implements OnInit{
       this.productList = [];
     }
 
-    
-
-    // if (this.searchValue.trim() !== '') {
-    //   this.apiService.searchProducts(this.searchValue).subscribe(
-    //     (response) => {
-    //       console.log('JSON Response:', response); // Print the response to the console
-    //       this.searchResults = response; //store the response
-    //     },
-    //     (error) => {
-    //       console.error('Error fetching search results:', error);
-    //     }
-    //   );
-    // } else {
-    //   this.searchResults = [];
-    // }
-    
 
   }
 }
