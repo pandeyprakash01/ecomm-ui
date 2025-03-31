@@ -1,6 +1,6 @@
 
 <nav>
-  <form *ngIf="isLoggedIn" (submit)="handleSearch()">
+  <form  (submit)="handleSearch()">
     <input type="text" placeholder="Search product ..." name="searchValue" [(ngModel)]="searchValue">
     <button type="submit">Search</button>
 </form>
@@ -21,17 +21,18 @@
         <!-- <a href="https://ap-south-1u0wjpjmql.auth.ap-south-1.amazoncognito.com/login?client_id=6ir8sofv4ntb74g46daa6g0h54&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F">login</a> -->
     <!--</div> -->
 </nav>
-now try with opensearh
-checking for cache
-     <div>
-        <ul>
-        <li *ngFor="let product of productList">
-          <img [src]="product.imageUrl" alt="{{ product.name }}" style="max-width: 100px;">
+
+    <!-- <div *ngFor="let product of productList"  >
+      <div (click)="goToProductDetailsPage(product.id)">
+         <ul > 
+         <li> 
+          <img [src]="product.imageUrl" alt="{{ product.name }}" max width="100">
           <h3>{{ product.name }}</h3>
           <p>{{ product.description }}</p>
           <p>Price: ₹{{ product.price }}</p>
-        </li>
-        </ul>
-      <div> 
+         </li> 
+         </ul> 
+      </div>
+      <div> -->
 
 

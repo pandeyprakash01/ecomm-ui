@@ -31,19 +31,19 @@ export class SearchComponent {
     // );
     
 
-    if (this.searchValue.trim() !== '') {
-      this.apiService.searchProducts(this.searchValue).subscribe(
-        (response) => {
-          console.log('JSON Response:', response); // Print the response to the console
-          this.productList = response; //store the response
-        },
-        (error) => {
-          console.error('Error fetching search results:', error);
-        }
-      );
-    } else {
-      this.productList = [];
-    }
+    // if (this.searchValue.trim() !== '') {
+    //   this.apiService.searchProducts(this.searchValue).subscribe(
+    //     (response) => {
+    //       console.log('JSON Response:', response); // Print the response to the console
+    //       this.productList = response; //store the response
+    //     },
+    //     (error) => {
+    //       console.error('Error fetching search results:', error);
+    //     }
+    //   );
+    // } else {
+    //   this.productList = [];
+    // }
 
     
 
