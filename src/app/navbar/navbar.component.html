@@ -1,6 +1,6 @@
 
 <nav>
-  <form  (submit)="handleSearch()">
+  <form *ngIf="isLoggedIn" (submit)="handleSearch()">
     <input type="text" placeholder="Search product ..." name="searchValue" [(ngModel)]="searchValue">
     <button type="submit">Search</button>
 </form>
