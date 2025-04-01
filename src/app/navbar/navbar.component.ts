@@ -23,7 +23,7 @@ export class NavbarComponent implements OnInit{
   
   constructor(private router:Router,private apiService:ApiService){
     this.cognitoLoginUrl = "https://ap-south-1z9yqyfeym.auth.ap-south-1.amazoncognito.com/login?client_id=6o1808k59b9emb89sa38dbp8ip&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fdy974bi55ou2y.cloudfront.net%2Fcallback";
-    this.cognitoLogoutUrl= "https://ap-south-1z9yqyfeym.auth.ap-south-1.amazoncognito.com/logout?client_id=6o1808k59b9emb89sa38dbp8ipf&logout_uri=https://dy974bi55ou2y.cloudfront.net/";
+    this.cognitoLogoutUrl= "https://ap-south-1z9yqyfeym.auth.ap-south-1.amazoncognito.com/logout?client_id=6o1808k59b9emb89sa38dbp8ip&logout_uri=https://dy974bi55ou2y.cloudfront.net/";
     
     // this.cognitoLoginUrl= "https://ap-south-1z9yqyfeym.auth.ap-south-1.amazoncognito.com/login?client_id=6o1808k59b9emb89sa38dbp8ip&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fcallback";
     // this.cognitoLogoutUrl = "https://ap-south-1z9yqyfeym.auth.ap-south-1.amazoncognito.com/logout?client_id=6o1808k59b9emb89sa38dbp8ip&logout_uri=http://localhost:4200/";
